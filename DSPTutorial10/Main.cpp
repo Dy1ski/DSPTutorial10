@@ -50,6 +50,9 @@ void testAO()
 	// make a break point below and see how the copy constructor works
 	// string s2 knows to call the copy constructor becasue
 	//when a variable is int then asssigned the compiler knows
+
+	// ps1->clone() will make a copy 
+	// need to be careful in term of shallow and deep copies
 	s1 = s2;
 
 	cout << "S1: " << *s1 << endl;
@@ -73,7 +76,9 @@ void testPA()
 
 	cout << "S1: " << **ps1 << endl;
 	cout << "S2: " << **ps2 << endl;
-
+	// what was done in the lab 
+	// this is a deep copy
+	// use watch1 to monitor variables
 	delete ps1;
 	delete ps2;
 }

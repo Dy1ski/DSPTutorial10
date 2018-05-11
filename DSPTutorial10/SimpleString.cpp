@@ -90,6 +90,7 @@ SimpleString& SimpleString::operator=(const SimpleString& aOtherString)
 SimpleString* SimpleString::clone()
 {
 	return new SimpleString(*this);
+	// copies a pointer to a point
 }
 
 #endif
